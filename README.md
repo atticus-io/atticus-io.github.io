@@ -1,1 +1,1 @@
-# s-atticus.github.io
+# atticus-io.github.io
