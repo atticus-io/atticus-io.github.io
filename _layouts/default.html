@@ -18,11 +18,14 @@
 			{{ content }}
 			
 			</div><!-- /.container -->
-    <footer>
-    		<ul>
-        		<li><a href="mailto:sid@atticus.io">email</a></li>
-        		<li><a href="https://github.com/atticus-io">github.com/atticus-io</a></li>
-		    </ul>
-		</footer>
+    		<footer>
+    			<ul>
+        			<li><a href="mailto:sid@atticus.io">email</a></li>
+        			<li><a href="https://github.com/atticus-io">github.com/atticus-io</a></li>
+		    	</ul>
+			</footer>
+			{% if jekyll.environment == 'production' %}
+    		{% include analytics.html %}
+    		{% endif %}
 		</body>
 	</html>
